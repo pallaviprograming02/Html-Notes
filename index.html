@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>HTML Notes</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="top-bar">
+        <div class="logo">
+            <!-- Simple HTML5-style logo -->
+            <div class="shield">
+                <span>&lt;/&gt;</span>
+            </div>
+            <span class="logo-text"> Pallavi-HTML Notes</span>
+        </div>
+
+        <button class="theme-toggle" id="themeToggle">Toggle Dark</button>
+    </header>
+
+    <div class="layout">
+        <!-- Sidebar / Navigation -->
+        <nav class="sidebar">
+            <h2>Topics</h2>
+            <ul>
+                <li><button class="nav-link active" data-target="intro">Introduction</button></li>
+                <li><button class="nav-link" data-target="tags">Basic Tags</button></li>
+                <li><button class="nav-link" data-target="structure">Page Structure</button></li>
+                <li><button class="nav-link" data-target="forms">Forms</button></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Introduction -->
+            <section class="note-section active" id="intro">
+                <h1>Introduction to HTML</h1>
+                <p>
+                    HTML (HyperText Markup Language) is the standard language for creating web pages.
+                    It uses <strong>elements</strong> (also called tags) to describe the structure of a page.
+                </p>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+            </section>
+
+            <!-- Basic Tags -->
+            <section class="note-section" id="tags">
+                <h1>Basic HTML Tags</h1>
+                <ul>
+                    <li><code>&lt;h1&gt;...&lt;/h1&gt;</code> – Heading (1 is biggest, 6 is smallest)</li>
+                    <li><code>&lt;p&gt;...&lt;/p&gt;</code> – Paragraph</li>
+                    <li><code>&lt;a href="..."&gt;...&lt;/a&gt;</code> – Link</li>
+                    <li><code>&lt;img src="..." alt="..."&gt;</code> – Image</li>
+                    <li><code>&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;</code> – Unordered list</li>
+                    <li><code>&lt;ol&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ol&gt;</code> – Ordered list</li>
+                </ul>
+                <pre><code>&lt;h1&gt;My Title&lt;/h1&gt;
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;a href="https://example.com"&gt;Go to example&lt;/a&gt;
+</code></pre>
+            </section>
+
+            <!-- Page Structure -->
+            <section class="note-section" id="structure">
+                <h1>Basic Page Structure</h1>
+                <p>A common HTML page layout uses semantic tags:</p>
+                <ul>
+                    <li><code>&lt;header&gt;</code> – top section (logo, navigation)</li>
+                    <li><code>&lt;nav&gt;</code> – main site navigation</li>
+                    <li><code>&lt;main&gt;</code> – main content of the page</li>
+                    <li><code>&lt;section&gt;</code> – grouped content</li>
+                    <li><code>&lt;footer&gt;</code> – bottom of the page</li>
+                </ul>
+                <pre><code>&lt;header&gt;...&lt;/header&gt;
+&lt;nav&gt;...&lt;/nav&gt;
+&lt;main&gt;
+  &lt;section&gt;...&lt;/section&gt;
+&lt;/main&gt;
+&lt;footer&gt;...&lt;/footer&gt;
+</code></pre>
+            </section>
+
+            <!-- Forms -->
+            <section class="note-section" id="forms">
+                <h1>HTML Forms</h1>
+                <p>Forms let users send data to your website.</p>
+                <pre><code>&lt;form action="/submit" method="post"&gt;
+  &lt;label&gt;
+    Name:
+    &lt;input type="text" name="name"&gt;
+  &lt;/label&gt;
+  &lt;br&gt;
+  &lt;label&gt;
+    Email:
+    &lt;input type="email" name="email"&gt;
+  &lt;/label&gt;
+  &lt;br&gt;
+  &lt;button type="submit"&gt;Send&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        Made with HTML, CSS &amp; JS • Learn, Edit, Experiment practice
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
